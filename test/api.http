@@ -1,0 +1,25 @@
+### 绘图任务下发
+POST {{host}}/sdapi/create_task
+content-type: application/json
+
+{
+  "temp_id": 1,
+  "params": {
+    "seed": "4259488860108327",
+    "steps": "2",
+    "batch_size": "1",
+    "prompt_msg": "(((shiny skin:1.3))), (shiny oiled skin), (dark skin:1.1), (detailed face), grin, (chubby:1), 1girl, beautiful woman, young woman, 20yo, (tight sheer white T-shirt), (tight black leggings), (high heels), Very fine and delicate eyes, shiny lips, (huge breasts), breast focus, BREAK ((whole body)), beautiful hip line, ((cleavage)), blonde hair, looking at viewer, BREAK (best quality), 8K, (realistic), ultra high res, extreme detailed, masterpiece, cinematic lighting"
+  }
+}
+
+### 历史任务
+POST {{host}}/sdapi/history
+content-type: application/json
+
+{
+  "prompt_id": "c55690b2-36a9-4a7b-95ec-55d4926ff3da"
+}
+
+### ping
+GET {{host}}/sdapi/ping
+content-type: application/json

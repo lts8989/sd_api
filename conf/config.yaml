@@ -1,0 +1,17 @@
+service:
+  port: 8080
+database: #数据库配置
+  host: "127.0.0.1"
+  port: 3306
+  username: "root"
+  password: "123456"
+  dbname: "sd_test"
+  driver: "mysql"
+log:
+  path: log #日志目录
+  file_name: lg #日志文件名
+  max_age: 0 #日志保留天数
+  rotation_time: 10 #日志切割时间间隔
+sd_service:
+  domain: "https://rnuix-34-133-62-132.a.free.pinggy.link/" # SD服务的域名
+  client_id: "533ef3a3-39c0-4e39-9ced-37d290f371f8"
