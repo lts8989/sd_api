@@ -40,13 +40,8 @@ func CreateTask(ctx utils.Context, tempId int32, params any) error {
 		templateContent = bytes.Replace(templateContent, key, []byte(v), -1)
 	}
 
-	paramsObj := make(map[string]interface{})
-	if err = json.Unmarshal(templateContent, &paramsObj); err != nil {
-		return err
-	}
-
 	//调用sd接口，下发绘图命令
-	resp, err := sdk.Prompt(utils.Conf.SdServCfg.ClientId, paramsObj)
+	resp, err := sdk.Prompt(utils.Conf.SdServCfg.ClientId, templateContent)
 	if err != nil {
 		return err
 	}

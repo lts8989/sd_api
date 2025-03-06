@@ -52,7 +52,7 @@ func ReceivedMsg(data sdk_model.WsReceive) error {
 				}
 
 				if dbErr := DownLoadImg(images); dbErr != nil {
-					log.Errorf("下载图片识别,prompt_id:%s,error:%v", promptId, dbErr)
+					log.Errorf("下载图片失败,prompt_id:%s,error:%v", promptId, dbErr)
 					return dbErr
 				}
 			}
