@@ -12,7 +12,7 @@ content-type: application/json
   }
 }
 
-### 历史任务
+### 查询任务执行结果
 POST {{host}}/sdapi/history
 content-type: application/json
 
@@ -20,6 +20,6 @@ content-type: application/json
   "prompt_id": "c55690b2-36a9-4a7b-95ec-55d4926ff3da"
 }
 
-### ping
+### ComfyUI 服务探活
 GET {{host}}/sdapi/ping
 content-type: application/json
