@@ -1,10 +1,10 @@
 package control
 
 import (
-	"github.com/lts8989/sd_api/internal/biz"
-	"github.com/lts8989/sd_api/internal/model"
-	"github.com/lts8989/sd_api/utils"
-	"github.com/lts8989/sd_sdk/sdk"
+	"github.com/lts8989/comfyui-go-api/internal/biz"
+	"github.com/lts8989/comfyui-go-api/internal/model"
+	"github.com/lts8989/comfyui-go-api/utils"
+	"github.com/lts8989/comfyui-go-sdk/sdk"
 )
 
 func CreateTask(c *utils.Context) {

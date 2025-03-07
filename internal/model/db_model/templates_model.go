@@ -1,6 +1,6 @@
 package db_model
 
-import "github.com/lts8989/sd_api/utils"
+import "github.com/lts8989/comfyui-go-api/utils"
 
 type Templates struct {
 	Id           int          `gorm:"column:id;primary_key;AUTO_INCREMENT" json:"id"`

@@ -1,4 +1,4 @@
-module github.com/lts8989/sd_api
+module github.com/lts8989/comfyui-go-api
 
 go 1.22.12
 
@@ -9,17 +9,13 @@ require (
 	github.com/go-playground/validator/v10 v10.25.0
 	github.com/go-sql-driver/mysql v1.9.0
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
-	github.com/lts8989/sd_sdk v0.0.1
+	github.com/lts8989/comfyui-go-sdk v0.0.2
 	github.com/pkg/errors v0.9.1
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5
 	github.com/sirupsen/logrus v1.9.3
 	gopkg.in/yaml.v2 v2.4.0
 	gorm.io/driver/mysql v1.5.7
 	gorm.io/gorm v1.25.12
-)
-
-replace (
-	github.com/lts8989/sd_sdk v0.0.1 => ../sd_sdk
 )
 
 require (

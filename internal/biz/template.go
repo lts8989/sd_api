@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/lts8989/sd_api/internal/model/db_model"
-	"github.com/lts8989/sd_api/utils"
-	"github.com/lts8989/sd_sdk/sdk"
+	"github.com/lts8989/comfyui-go-api/internal/model/db_model"
+	"github.com/lts8989/comfyui-go-api/utils"
+	"github.com/lts8989/comfyui-go-sdk/sdk"
 	"os"
 )
 
@@ -41,7 +41,7 @@ func CreateTask(ctx utils.Context, tempId int32, params any) error {
 	}
 
 	//调用sd接口，下发绘图命令
-	resp, err := sdk.Prompt(utils.Conf.SdServCfg.ClientId, templateContent)
+	resp, err := sdk.Prompt(templateContent)
 	if err != nil {
 		return err
 	}
